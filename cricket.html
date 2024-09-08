@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cricket.css">
+</head>
+<body>
+    <h1 class="container">Bat Ball Stump Game</h1>
+    
+   <div class="container">
+    <button class="container" 
+     onclick="
+     let userChoice='bat';
+     let computerChoice=Math.random()*3;
+     if (computerChoice>0 && computerChoice<=1){
+        computerChoice='bat';
+     }
+     else if(computerChoice>1 && computerChoice<=2){
+        computerChoice='ball';
+     }
+     else{
+        computerChoice='stump'
+     }
+     let answer='';
+
+     if(computerChoice===userChoice){
+        answer=`it's a tie`;
+     }
+     else if(computerChoice==='ball'){
+        answer='user won';
+     }
+     else{
+        answer='computer won';
+     }
+     alert(`you have choosen ${userChoice} and computer has choosen ${computerChoice} and ${answer}`)
+
+     ">Bat</button>
+
+
+
+
+    <button class="container"
+    onclick="
+    userChoice='ball';
+    computerChoice=Math.random()*3;
+    if (computerChoice>0 && computerChoice<=1){
+       computerChoice='bat';
+    }
+    else if(computerChoice>1 && computerChoice<=2){
+       computerChoice='ball';
+    }
+    else{
+       computerChoice='stump'
+    }
+    answer='';
+
+    if(computerChoice===userChoice){
+       answer=`it's a tie`;
+    }
+    else if(computerChoice==='bat'){
+       answer='computer won';
+    }
+    else{
+       answer='user won';
+    }
+    alert(`you have choosen ${userChoice} and computer has choosen ${computerChoice} and ${answer}`); 
+    ">Ball</button>
+
+    <button class="container"  
+    onclick="
+    userChoice='stump';
+    computerChoice=Math.random()*3;
+    if (computerChoice>0 && computerChoice<=1){
+       computerChoice='bat';
+    }
+    else if(computerChoice>1 && computerChoice<=2){
+       computerChoice='ball';
+    }
+    else{
+       computerChoice='stump'
+    }
+    answer='';
+
+    if(computerChoice===userChoice){
+       answer=`it's a tie`;
+    }
+    else if(computerChoice==='bat'){
+       answer='user won';
+    }
+    else{
+       answer='computer won';
+    }
+    alert(`you have choosen ${userChoice} and computer has choosen ${computerChoice} and ${answer}`); 
+    "
+    
+    
+    > Stump</button>
+    
+   </div>
+    
+</body>
+</html>
